@@ -12,7 +12,7 @@ class Transfer
     @sender.valid? && @receiver.valid? ? true : false
   end
   
-  def 
+  def ex
     if @sender.balance > @amount && @status == "pending"
       @sender.balance -= @amount
       @receiver.balance += @amount
